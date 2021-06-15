@@ -1,0 +1,22 @@
+table, td, th {
+    border:1px solid black;
+}
+table {
+    border-collapse:collapse;
+    width:100%;
+}
+td, th {
+    padding:5px;
+}
+thead {
+    color: #EAF8BF;
+    background-color: #006992;
+}
+tbody {
+    color:#001D4A;
+    background-color: #EAF8BF;
+}
+tfoot {
+    color:#EAF8BF;
+    background-color: #27476E;
+}

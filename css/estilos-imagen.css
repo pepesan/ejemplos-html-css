@@ -1,0 +1,10 @@
+.imagen img{
+    /* for the img inside your div */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fondo_rojo img{
+    background-color: red;
+    width: 300px;
+}

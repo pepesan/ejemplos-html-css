@@ -1,0 +1,98 @@
+<html>
+<head>
+    <title>Ejemplos formularios</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+</head>
+<body>
+    <h2>Contenido</h2>
+    <div>
+        <h3>Formulario muy sencillo</h3>
+        <form action="http://www.enlace.es/formulario.php" method="post">
+            <label for="campo_nombre">Escribe tu nombre:</label>
+            <input id="campo_nombre" type="text" name="nombre" value="" />
+            <br/>
+            <input id="boton_enviar" type="submit" value="Enviar" />
+        </form>
+    </div>
+    <div>
+        <h3>Formulario tipos de input html4</h3>
+        <form
+                action="http://www.enlace.es/formulario.php"
+                method="post"
+                enctype="multipart/form-data"
+        >
+            <label for="campo_text">Escribe tu nombre:</label>
+            <!-- text -->
+            <input id="campo_text" type="text" name="nombre" value="" /> <br/>
+            <label for="campo_password">Escribe tu password:</label>
+            <!-- password  -->
+            <input id="campo_password" type="password" name="password" value="" /><br/>
+            <label for="campo_checkbox">¿Acepta las condiciones?:</label>
+            <!--checkbox  -->
+            <input id="campo_checkbox" type="checkbox" name="checkbox" value="" /><br/>
+            <label>¿Elija una opcion?:</label>
+            <!-- radio  -->
+            <label for="campo_radio_1">Opción 1:</label>
+            <input id="campo_radio_1" type="radio" name="opcion" value="uno" />
+            <label for="campo_radio_2">Opción 2:</label>
+            <input id="campo_radio_2" type="radio" name="opcion" value="dos" checked="checked" /><br/>
+            <br/>
+            <label for="campo_file">Fichero:</label>
+            <!--| file hay que poner el enctype="multipart/form-data" dentro de la etiqueta del form -->
+            <input id="campo_file" type="file" name="fichero" value="" /><br/>
+
+            <!--Campo oculto | hidden-->
+            <input id="campo_hidden" type="hidden" name="ccc" value="" /><br/>
+
+            <input id="boton_submit" type="submit" value="Enviar" />
+            <input id="boton_reset" type="reset" value="Reset" />
+            <input id="boton_help" type="button" value="Help" />
+
+        </form>
+    </div>
+    <div>
+        <h3>Formulario avanzado</h3>
+        <form action="http://www.enlace.es/formulario.php" method="post">
+            <fieldset>
+                <legend>
+                    este formulario asdsddassd
+                </legend>
+                <label for="campo_nombre_complex">Escribe tu nombre:</label>
+                <input id="campo_nombre_complex" type="text" name="nombre" value="" /><br/>
+                <label for="campo_ape_complex">Escribe tu apellido:</label>
+                <input id="campo_ape_complex" type="text" name="ape" value="" />
+
+            </fieldset>
+            <fieldset>
+                <label for="descripcion">Descripción del producto</label> <br/>
+                <textarea id="descripcion" name="descripcion" cols="40" rows="5">Texto</textarea>
+            </fieldset>
+            <fieldset>
+                <label for="so">Sistema operativo</label>
+                <br/>
+                <select id="so" name="so">
+                    <option value="" selected="selected">- selecciona -</option>
+                    <option value="windows">Windows</option>
+                    <option value="mac">Mac</option>
+                    <option value="linux">Linux</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label for="som">Sistema operativo multiple</label>
+                <br/>
+                <select id="som" name="som" multiple>
+                    <option value="" selected="selected">- selecciona -</option>
+                    <option value="windows">Windows</option>
+                    <option value="mac">Mac</option>
+                    <option value="linux">Linux</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </fieldset>
+            <br/>
+            <input id="boton_enviar_complex" type="submit" value="Enviar" /><br/>
+        </form>
+    </div>
+</body>
+</html>
